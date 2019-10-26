@@ -227,7 +227,7 @@ const calculator = () => {
     numbers[numbers.length] = getNumber(displayElt.innerHTML, numbers, operators.length);
     displayElt.innerHTML = getResult(numbers, operators);
     inputLeft = 9;
-    if (displayElt.innerHTML !== '') {
+    if (displayElt.innerHTML.includes('.')) {
       isDecimalUsed = true;
       decimalElt.setAttribute('disabled', '');
     }
