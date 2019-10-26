@@ -1,0 +1,111 @@
+@font-face{
+  font-family:'digital-font';
+  src: url('digital-7.ttf');
+}
+
+body {
+  background-color: #161B21;
+}
+
+h1 {
+  text-align: center;
+  font-family: Consolas;
+  color: white;
+}
+
+#calculator {
+  color: #2AFFA7;
+  width: 350px;
+  margin: auto;
+  border: 2px solid white;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#calculator #display {
+  width: 100%;
+  min-height: 75px;
+  font-size: 60px;
+  font-family: 'digital-font';
+  text-align: right;
+  overflow-wrap: break-word;
+  background: none;
+  color: #2AFFA7;
+  border: 1px solid white;
+  margin-bottom: 30px;
+  padding: 0 5px 0 5px;
+}
+
+#digits {
+  display: flex;
+  width: 160px;
+  height: 215px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#operators {
+  width: 105px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  font-size: 20px;
+  color: #2AFFA7;
+  background: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.digit:hover {
+  background: linear-gradient(rgb(59, 59, 59),rgb(31, 30, 30));
+}
+
+.digit:active {
+  background: linear-gradient(rgb(31, 30, 30), rgb(59, 59, 59));
+}
+
+.operator {
+  color: #161B21;
+  background: #2AFFA7;
+}
+
+.operator:hover {
+  background: linear-gradient(rgb(0, 206, 120), rgb(159, 255, 215));
+}
+
+.operator:active {
+  background: linear-gradient(rgb(159, 255, 215), rgb(0, 206, 120));
+}
+
+#clear {
+  width: 105px;
+}
+
+#equal {
+  width: 105px;
+  background: rgb(1, 112, 66);
+}
+
+#equal:hover {
+  background: linear-gradient(rgb(1, 112, 66), rgb(2, 70, 41));
+}
+
+#equal:active {
+  background: linear-gradient( rgb(2, 70, 41), rgb(1, 112, 66));
+}
+
+#decimal:disabled {
+  background: linear-gradient(rgb(143, 0, 0),rgb(65, 0, 0));
+  cursor: initial;
+}
